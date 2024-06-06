@@ -9,6 +9,24 @@ li{
     margin:10px;
 }
 
+html{
+    height:100%;
+}
+
+body{
+    display:flex;
+    flex-direction: column;
+    height:100%;
+}
+
+.cursor{
+    cursor:pointer;
+}
+
+img[alt="Foto de perfil"]{
+    border-radius:25px;
+}
+
 header ul{
     list-style-type:none;
     display:flex;
@@ -17,6 +35,7 @@ header ul{
 }
 
 main{
+    flex-grow: 2;
     /* hv es el alto relativo al tamaño de la pantalla */
     height:65vh;
     display:flex;
@@ -37,6 +56,12 @@ main{
     margin:0 auto;
 }
 
+#buscador:hover{
+    border-color:transparent;
+    background:#fff;
+    box-shadow:0 1px 6px rgba(32,33,36,28)
+}
+
 #buscador input{
     width:400px;
     outline:none;
@@ -50,7 +75,13 @@ main{
 }
 
 .icono-cuadro {
-    height:35px;
+    height:30px;
+    padding: 4px;
+}
+
+.icono-cuadro:hover {
+    background-color: #ddd;
+    border-radius:25px;
 }
 
 #botones {
@@ -66,8 +97,19 @@ main{
     height:40px;
 }
 
+#botones button:hover{
+    box-shadow: 0 1px 1px rgba(0,0,0,1);
+    background-color:#f8f9fa;
+    border:1px solid #dadce0
+}
+
 #logo{
-    width:272px;
+    width:300px;
+    margin: 24px;
+}
+
+.flex-grow{
+    flex-grow:2;
 }
 
 footer{
