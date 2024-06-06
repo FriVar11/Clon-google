@@ -2,6 +2,7 @@
 
 *{
     font-family: "Roboto", sans-serif;
+    margin:0px;
 }
 
 li{
@@ -17,7 +18,7 @@ header ul{
 
 main{
     /* hv es el alto relativo al tamaño de la pantalla */
-    height:63vh;
+    height:65vh;
     display:flex;
     flex-direction:column;
     align-items:center;
@@ -69,18 +70,29 @@ main{
     width:272px;
 }
 
+footer{
+    background-color: #f2f2f2;
+}
+
 footer ul{
     display:flex;
     list-style-type:none;
     font-size:15px;
+    margin:8px auto;
 }
 
 footer>div>ul{
     justify-content:center;
 }
+
 a[target]{
     color:#202124;
     text-decoration:none;
+}
+
+.listas-inferiores{
+    display:flex;
+    border-top:1px solid #dadce0
 }
 /* Modelo de caja box model
     Border
