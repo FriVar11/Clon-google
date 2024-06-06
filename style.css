@@ -1,0 +1,91 @@
+/* El asterisco es para que se aplique el cambio a toda la página */
+
+*{
+    font-family: "Roboto", sans-serif;
+}
+
+li{
+    margin:10px;
+}
+
+header ul{
+    list-style-type:none;
+    display:flex;
+    justify-content:end;
+    align-items:center;
+}
+
+main{
+    /* hv es el alto relativo al tamaño de la pantalla */
+    height:63vh;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+}
+
+#buscador{
+    display:flex;
+    justify-content:center;
+    border:1px solid #dfe1e5;
+    border-radius:24px;
+    min-height:44px;
+    max-width:584px;
+    width:538px;
+    
+    margin:0 auto;
+}
+
+#buscador input{
+    width:400px;
+    outline:none;
+    border:none;
+}
+
+#buscador .icono-buscador{
+    margin:4px;
+    width:30px;
+    height:30px;
+}
+
+.icono-cuadro {
+    height:35px;
+}
+
+#botones {
+    /* Funciona con el texto, pero también funciona con los elementos inline */
+    text-align:center;
+}
+
+#botones button{
+    border:1px solid #f8f9fa;
+    border-radius:4px;
+    margin: 11px 4px;
+    padding: 0 16px;
+    height:40px;
+}
+
+#logo{
+    width:272px;
+}
+
+footer ul{
+    display:flex;
+    list-style-type:none;
+    font-size:15px;
+}
+
+footer>div>ul{
+    justify-content:center;
+}
+a[target]{
+    color:#202124;
+    text-decoration:none;
+}
+/* Modelo de caja box model
+    Border
+    Padding
+    Margin
+*/
+
+
